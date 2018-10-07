@@ -1,0 +1,280 @@
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  padding-bottom: 3em;
+  color: whitesmoke;
+  background-color: darkcyan;
+  clear: left;
+  text-align: center;
+  height: 6%;
+  margin-top:0;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+  animation: marquee 35s linear infinite;
+  text-shadow: 1px 1px #ff0000;
+
+
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    text-indent: 100%;
+  }
+
+  100% {
+    text-indent: -135em;
+  }
+}
+
+section {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+div p {
+  display: block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+div.img:hover {
+  border: 1px solid #777;
+}
+
+article {
+  line-height: 30px;
+  font-size: 18px;
+  text-align: justify;
+  margin-top: 3em;
+  padding-bottom: 10px;
+  text-align: left;
+  padding: 3px;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+aside {
+  float: left;
+  margin: 10px;
+  position: relative;
+  margin-top: 3em;
+  margin-right: 5em;
+  padding: 3px;
+  padding-bottom: 10px;
+}
+
+#text {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h3,h2 {
+  color: #060;
+}
+
+p {
+  text-align: justify;
+}
+
+footer {
+  padding: 1em;
+  margin-top: 1em;
+  clear: left;
+  height: 380px;
+  background-image: url("../image/cutimage.jpg");
+  position: relative;
+  background-origin: border-box;
+  background-position: bottom;
+  background-size: auto;
+  width: auto;
+
+  background-position:center;
+}
+
+.img {
+  position: relative;
+  opacity: 0.89;
+  border: 1px solid green;
+  border-radius: 50% / 50%;
+}
+
+.img2 {
+  position: relative;
+  opacity: 0.89;
+  border: 1px solid green;
+  border-radius: 50% / 10%;
+  box-shadow: 7px 6px 5px #888888;
+  margin-top: 6px;
+}
+
+.img3 {
+  position: relative;
+  opacity: 0.89;
+  height: 200px;
+  width: 300px;
+  border: 1px solid green;
+  border-radius: 50% / 10%;
+  box-shadow: 7px 6px 5px #888888;
+  margin-top: 6px;
+}
+
+.img2:hover {
+  box-shadow: 0 0 2px 3px rgba(0, 140, 186, 0.5);
+}
+
+.img:hover {
+  box-shadow: 0 0 2px 3px rgba(0, 140, 186, 0.5);
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.flexcontainer {
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 530px;
+}
+
+#changeName {
+  color: #060;
+  font-weight: bold;
+}
+
+.changeAnswerStyle {
+  color: #060;
+  font-style: italic;
+}
+
+#align {
+  text-align: right;
+}
+
+#content {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-left: 100px;
+}
+
+button {
+  background-color: #060;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navbar-brand>img {
+  display: inline-block;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+
+
+}
+.slide img {
+  height: 100%;
+  display: inline;
+  width: 100%;
+}
+.slide {
+  text-align: center;
+  display: none;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+  height: 400px;
+}
+.caption {
+  color: #fff;
+  background-color: green;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.8;
+  text-align: left;
+}
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.prev, .next, .play {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover, .play:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.play{ right: 7.3%;}
+
+.dropdown-menu {background-color:;}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #337ab7 ;
+  white-space: nowrap;
+}
+
+/*&#10072;&#10072;*/
